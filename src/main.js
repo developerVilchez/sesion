@@ -64,6 +64,17 @@ const viewProfiles = () => {
 
 const viewPaloma = () => {
   return `
+  <nav class="container navbar" id="navbar-container-psico-view-paloma">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
+    <ul id="nav-mobile" class="right list-items">
+      <li class="item"><a class="font-black" href="#how-work">¿Cómo Funciona?</a></li>
+      <li class="item"><a class="font-black" href="#team">El equipo</a></li>
+      <li class="item"><a class="font-black" href="#faq">FAQ</a></li>
+      <li class="item"><a  id="start-now" class="font-black" href="#sesion">Empezar ahora</a></li>
+    </ul>
+  </div>
+</nav>
   <div class="section">
   <div class="row">
     <div class="col s12">
@@ -78,7 +89,18 @@ const viewPaloma = () => {
 }
 
 const viewSantiago = () => {
- return `<div class="section">
+ return ` <nav class="container navbar" id="navbar-container-psico-view-santiago">
+ <div class="nav-wrapper">
+   <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
+   <ul id="nav-mobile" class="right list-items">
+     <li class="item"><a class="font-black" href="#how-work">¿Cómo Funciona?</a></li>
+     <li class="item"><a class="font-black" href="#team">El equipo</a></li>
+     <li class="item"><a class="font-black" href="#faq">FAQ</a></li>
+     <li class="item"><a  id="start-now" class="font-black" href="#sesion">Empezar ahora</a></li>
+   </ul>
+ </div>
+</nav>
+ <div class="section">
  <div class="row">
    <div class="col s12">
      <div class="icon-block">
@@ -92,7 +114,19 @@ const viewSantiago = () => {
 }
 
 const viewAmelie = () => {
-  return `<div class="section">
+  return `
+  <nav class="container navbar" id="navbar-container-psico-view-amelie">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
+    <ul id="nav-mobile" class="right list-items">
+      <li class="item"><a class="font-black" href="#how-work">¿Cómo Funciona?</a></li>
+      <li class="item"><a class="font-black" href="#team">El equipo</a></li>
+      <li class="item"><a class="font-black" href="#faq">FAQ</a></li>
+      <li class="item"><a  id="start-now" class="font-black" href="#sesion">Empezar ahora</a></li>
+    </ul>
+  </div>
+</nav>
+  <div class="section">
   <div class="row">
     <div class="col s12">
       <div class="icon-block">
@@ -118,15 +152,32 @@ htmlContainer.addEventListener('click', (event) => {
       };
    });
    htmlSectionProfileView.addEventListener('click', (event) => {
-    //console.log(event.target.className);
     if(event.target.id === 'psico-paloma'){
       root.innerHTML = viewPaloma();
+      const navbarPaloma = document.getElementById('navbar-container-psico-view-paloma');
+      navbarPaloma.addEventListener('click', (event) => {
+        if(event.target.className === 'img-logo'){
+          window.location = 'index.html';
+        };
+      });
     }
     else if(event.target.id === 'psico-santiago'){
       root.innerHTML = viewSantiago();
+      const navbarSantiago = document.getElementById('navbar-container-psico-view-santiago');
+      navbarSantiago.addEventListener('click', (event) => {
+        if(event.target.className === 'img-logo'){
+          window.location = 'index.html';
+        };
+      })
     }
     else {
       root.innerHTML = viewAmelie();
-    }
+      const navbarAmelie = document.getElementById('navbar-container-psico-view-amelie');
+      navbarAmelie.addEventListener('click', (event) => {
+        if(event.target.className === 'img-logo'){
+          window.location = 'index.html';
+        };
+      });
+    };
    })
 });
