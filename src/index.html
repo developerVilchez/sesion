@@ -12,15 +12,16 @@
 </head>
 <body>
   <!--section hero-->
+  <main id="root">
   <header class="hero bg-image">
-    <nav class="container navbar">
+    <nav class="container navbar" id="navbar-container">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
         <ul id="nav-mobile" class="right list-items">
           <li class="item"><a class="font-black" href="#how-work">¿Cómo Funciona?</a></li>
           <li class="item"><a class="font-black" href="#team">El equipo</a></li>
           <li class="item"><a class="font-black" href="#faq">FAQ</a></li>
-          <li class="item"><a class="font-black" href="#sesion">Empezar ahora</a></li>
+          <li class="item"><a  id="start-now" class="font-black" href="#sesion">Empezar ahora</a></li>
         </ul>
       </div>
     </nav>
@@ -37,32 +38,31 @@
   </section>
   </header>
   <!--section how work-->
-  <section id="how-work" class="about">
-    <div class="container">
+    <section id="how-work"  class="container info">
       <div class="row">
         <div class="col s12">
-          <h3>¿Cómo funciona la terapia online?</h3>
+          <h4>¿Cómo funciona la terapia online?</h4>
         </div>
-        <div class="col s5">
+        <div class="col s5 option">
           <h5>Elige a tu terapeuta</h5>
           <a>Conoce a nuestro equipo aquí</a>
         </div>
-        <div class="col s5">
+        <div class="col s5 option">
           <h5>Selecciona el plan adecuado para ti</h5>
-          <p>Contamos con paquetes que se adaptan a tus necesidades. <a>Ver paquetes</a></p>
+          <p>Contamos con paquetes que se adaptan a tus necesidades</p>
+          <a>Ver paquetes</a>
         </div>
-        <div class="col s5">
+        <div class="col s5 option">
           <h5>Agenda una Sesión</h5>
         </div>
-        <div class="col s5">
+        <div class="col s5 option">
           <h5>Empieza la terapia</h5>
           <p>Desde dónde quieras y cuándo quieras</p>
         </div>   
       </div>
-    </div>
-  </section>
+    </section>
    <!--section team-->
-   <section id="team" class="about">
+   <section id="team" class="info">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -78,7 +78,7 @@
       </div>
     </section>
      <!--section beneficios-->
-   <section id="benefits" class="about">
+   <section id="benefits" class="info">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -101,7 +101,7 @@
         </div>
       </div>
     </section>
-    <section id="services" class="about">
+    <section id="services" class="info">
         <div class="container">
           <div class="row">
             <div class="col s12">
@@ -118,6 +118,7 @@
           </div>
         </div>
       </section>
+    </main>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="vendors/materialize/js//materialize.min.js"></script>

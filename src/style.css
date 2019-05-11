@@ -77,3 +77,20 @@ h6 {
   display: inline-block;
   background: var(--tertiary)
 }
+
+.info a:hover{
+  cursor: pointer;
+}
+
+.option {
+  outline: 1px solid red;
+  height: 125px;
+  margin-right: 70px;
+  margin-bottom: 40px;
+}
+
+.option h5 {
+  font-size: 1rem;
+  font-weight: bold;
+
+}
