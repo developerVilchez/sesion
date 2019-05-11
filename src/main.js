@@ -138,7 +138,9 @@ const viewAmelie = () => {
       </div>
       </div>`
 }
+
 const htmlContainer = document.getElementById('navbar-container');
+
 htmlContainer.addEventListener('click', (event) => {
   const root = document.getElementById('root');
   if(event.target.id === 'start-now'){
