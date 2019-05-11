@@ -94,3 +94,9 @@ h6 {
   font-weight: bold;
 
 }
+
+.profile {
+  outline: 1px solid blue;
+  display: inline-block;
+  height: 160px;
+}
