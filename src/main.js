@@ -1,4 +1,4 @@
-const navbar = () => {
+const viewProfiles = () => {
   return `<header class="hero">
   <nav class="container navbar" id="navbar-container-psico-view">
     <div class="nav-wrapper">
@@ -11,8 +11,8 @@ const navbar = () => {
       </ul>
     </div>
   </nav>
-  <div class="container">
-  <div class="section">
+  <div class="container>
+  <div class="section" id="section-container-psico-view">
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
@@ -25,7 +25,7 @@ const navbar = () => {
             <li>- Psicoterapeuta de niños, adolescentes y adultos.</li>
             <li>- Experiencia en trabajo vincular y asesoría de crianza a padres.</li>
           </ul>
-          <a>Ver Perfil</a>
+          <a id="psico-paloma">Ver Perfil</a>
         </div>
       </div>
       <div class="col s12 m4">
@@ -39,7 +39,7 @@ const navbar = () => {
           <li>- Psicoterapeuta de adolescentes y adultos.</li>
           <li>- Experiencia en estrés laboral y crisis vitales.</li>
         </ul>
-        <a>Ver Perfil</a>
+        <a id="psico-santiago">Ver Perfil</a>
       </div>
       </div>
       <div class="col s12 m4">
@@ -53,7 +53,7 @@ const navbar = () => {
           <li>- Psicoterapeuta psicoanalítica egresada del Instituto Inter-Cambio.</li>
           <li>- Experiencia en asesoría pedagógica y orientación a padres de familia en estilos de crianza.</li>
         </ul>
-        <a>Ver Perfil</a>
+        <a id="psico-amelie">Ver Perfil</a>
       </div>
       </div>
     </div>
@@ -66,14 +66,25 @@ const htmlContainer = document.getElementById('navbar-container');
 htmlContainer.addEventListener('click', (event) => {
   const root = document.getElementById('root');
   if(event.target.id === 'start-now'){
-      root.innerHTML = navbar();
+      root.innerHTML = viewProfiles();
     }; 
   const htmlContainerProfileView = document.getElementById('navbar-container-psico-view');
+  const htmlSectionProfileView = document.getElementById('section-container-psico-view');
   htmlContainerProfileView.addEventListener('click', (event) => {
       if(event.target.className === 'img-logo'){
         window.location = 'index.html';
       };
    });
-}); 
-
-git 
+   htmlSectionProfileView.addEventListener('click', (event) => {
+    //console.log(event.target.className);
+    if(event.target.id === 'psico-paloma'){
+      root.innerHTML = 'Paloma';
+    }
+    else if(event.target.id === 'psico-santiago'){
+      root.innerHTML = 'santiago';
+    }
+    else {
+      root.innerHTML = 'amelie';
+    }
+   })
+});
