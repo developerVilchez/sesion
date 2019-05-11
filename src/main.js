@@ -1,8 +1,6 @@
-const htmlContainer = document.getElementById('navbar-container');
-const root = document.getElementById('root');
-const navbar = () => {
+const viewProfiles = () => {
   return `<header class="hero">
-  <nav class="container navbar" id="navbar-container">
+  <nav class="container navbar" id="navbar-container-psico-view">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
       <ul id="nav-mobile" class="right list-items">
@@ -13,39 +11,175 @@ const navbar = () => {
       </ul>
     </div>
   </nav>
-  <div class="container">
-  <div class="section">
-    <!--   Icon Section   -->
+  <div class="container>
+  <div class="section" id="section-container-psico-view">
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-          <h5 class="center">Speeds up development</h5>
-          <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/paloma.png"/></h2>
+          <h5 class="center">Paloma Reaño</h5>
+          <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
+        </div>
+        <div class="icon-block">
+          <ul>
+            <li>- Psicoterapeuta de niños, adolescentes y adultos.</li>
+            <li>- Experiencia en trabajo vincular y asesoría de crianza a padres.</li>
+          </ul>
+          <a id="psico-paloma">Ver Perfil</a>
         </div>
       </div>
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-          <h5 class="center">User Experience Focused</h5>
-          <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/santiago.png"/></h2>
+          <h5 class="center">Santiago Joseph</h5>
+          <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
         </div>
+        <div class="icon-block">
+        <ul>
+          <li>- Psicoterapeuta de adolescentes y adultos.</li>
+          <li>- Experiencia en estrés laboral y crisis vitales.</li>
+        </ul>
+        <a id="psico-santiago">Ver Perfil</a>
+      </div>
       </div>
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-          <h5 class="center">Easy to work with</h5>
-          <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/amelie.png"/></h2>
+          <h5 class="center">Amelie</h5>
+          <p class="light">Bachiller en Psicología y psicoterapeuta psicoanalítica</p>
         </div>
+        <div class="icon-block">
+        <ul>
+          <li>- Psicoterapeuta psicoanalítica egresada del Instituto Inter-Cambio.</li>
+          <li>- Experiencia en asesoría pedagógica y orientación a padres de familia en estilos de crianza.</li>
+        </ul>
+        <a id="psico-amelie">Ver Perfil</a>
+      </div>
       </div>
     </div>
   </div>
 </div>
 </header>`  
 }
+
+const viewPaloma = () => {
+  return `
+  <nav class="container navbar" id="navbar-container-psico-view-paloma">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
+    <ul id="nav-mobile" class="right list-items">
+      <li class="item"><a class="font-black" href="#how-work">¿Cómo Funciona?</a></li>
+      <li class="item"><a class="font-black" href="#team">El equipo</a></li>
+      <li class="item"><a class="font-black" href="#faq">FAQ</a></li>
+      <li class="item"><a  id="start-now" class="font-black" href="#sesion">Empezar ahora</a></li>
+    </ul>
+  </div>
+</nav>
+  <div class="section">
+  <div class="row">
+    <div class="col s12">
+      <div class="icon-block">
+        <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/paloma.png"/></h2>
+        <h5 class="center">Paloma Reaño</h5>
+        <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
+      </div>
+      </div>
+      </div>
+      </div>`
+}
+
+const viewSantiago = () => {
+ return ` <nav class="container navbar" id="navbar-container-psico-view-santiago">
+ <div class="nav-wrapper">
+   <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
+   <ul id="nav-mobile" class="right list-items">
+     <li class="item"><a class="font-black" href="#how-work">¿Cómo Funciona?</a></li>
+     <li class="item"><a class="font-black" href="#team">El equipo</a></li>
+     <li class="item"><a class="font-black" href="#faq">FAQ</a></li>
+     <li class="item"><a  id="start-now" class="font-black" href="#sesion">Empezar ahora</a></li>
+   </ul>
+ </div>
+</nav>
+ <div class="section">
+ <div class="row">
+   <div class="col s12">
+     <div class="icon-block">
+       <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/santiago.png"/></h2>
+       <h5 class="center">Santiago Joseph</h5>
+       <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
+     </div>
+     </div>
+     </div>
+     </div>`
+}
+
+const viewAmelie = () => {
+  return `
+  <nav class="container navbar" id="navbar-container-psico-view-amelie">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
+    <ul id="nav-mobile" class="right list-items">
+      <li class="item"><a class="font-black" href="#how-work">¿Cómo Funciona?</a></li>
+      <li class="item"><a class="font-black" href="#team">El equipo</a></li>
+      <li class="item"><a class="font-black" href="#faq">FAQ</a></li>
+      <li class="item"><a  id="start-now" class="font-black" href="#sesion">Empezar ahora</a></li>
+    </ul>
+  </div>
+</nav>
+  <div class="section">
+  <div class="row">
+    <div class="col s12">
+      <div class="icon-block">
+        <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/amelie.png"/></h2>
+        <h5 class="center">Amelie</h5>
+        <p class="light">Bachiller en Psicología y psicoterapeuta psicoanalítica</p>
+      </div>
+      </div>
+      </div>
+      </div>`
+}
+
+const htmlContainer = document.getElementById('navbar-container');
+
 htmlContainer.addEventListener('click', (event) => {
-  console.log(event.target.id);
+  const root = document.getElementById('root');
   if(event.target.id === 'start-now'){
-    root.innerHTML = navbar();
-  }
-})
+      root.innerHTML = viewProfiles();
+    }; 
+  const htmlContainerProfileView = document.getElementById('navbar-container-psico-view');
+  const htmlSectionProfileView = document.getElementById('section-container-psico-view');
+  htmlContainerProfileView.addEventListener('click', (event) => {
+      if(event.target.className === 'img-logo'){
+        window.location = 'index.html';
+      };
+   });
+   htmlSectionProfileView.addEventListener('click', (event) => {
+    if(event.target.id === 'psico-paloma'){
+      root.innerHTML = viewPaloma();
+      const navbarPaloma = document.getElementById('navbar-container-psico-view-paloma');
+      navbarPaloma.addEventListener('click', (event) => {
+        if(event.target.className === 'img-logo'){
+          window.location = 'index.html';
+        };
+      });
+    }
+    else if(event.target.id === 'psico-santiago'){
+      root.innerHTML = viewSantiago();
+      const navbarSantiago = document.getElementById('navbar-container-psico-view-santiago');
+      navbarSantiago.addEventListener('click', (event) => {
+        if(event.target.className === 'img-logo'){
+          window.location = 'index.html';
+        };
+      })
+    }
+    else {
+      root.innerHTML = viewAmelie();
+      const navbarAmelie = document.getElementById('navbar-container-psico-view-amelie');
+      navbarAmelie.addEventListener('click', (event) => {
+        if(event.target.className === 'img-logo'){
+          window.location = 'index.html';
+        };
+      });
+    };
+   })
+});
