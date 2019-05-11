@@ -25,6 +25,7 @@ const navbar = () => {
             <li>- Psicoterapeuta de niños, adolescentes y adultos.</li>
             <li>- Experiencia en trabajo vincular y asesoría de crianza a padres.</li>
           </ul>
+          <a>Ver Perfil</a>
         </div>
       </div>
       <div class="col s12 m4">
@@ -38,6 +39,7 @@ const navbar = () => {
           <li>- Psicoterapeuta de adolescentes y adultos.</li>
           <li>- Experiencia en estrés laboral y crisis vitales.</li>
         </ul>
+        <a>Ver Perfil</a>
       </div>
       </div>
       <div class="col s12 m4">
@@ -51,6 +53,7 @@ const navbar = () => {
           <li>- Psicoterapeuta psicoanalítica egresada del Instituto Inter-Cambio.</li>
           <li>- Experiencia en asesoría pedagógica y orientación a padres de familia en estilos de crianza.</li>
         </ul>
+        <a>Ver Perfil</a>
       </div>
       </div>
     </div>
@@ -73,3 +76,4 @@ htmlContainer.addEventListener('click', (event) => {
    });
 }); 
 
+git 
