@@ -62,6 +62,48 @@ const viewProfiles = () => {
 </header>`  
 }
 
+const viewPaloma = () => {
+  return `
+  <div class="section">
+  <div class="row">
+    <div class="col s12">
+      <div class="icon-block">
+        <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/paloma.png"/></h2>
+        <h5 class="center">Paloma Reaño</h5>
+        <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
+      </div>
+      </div>
+      </div>
+      </div>`
+}
+
+const viewSantiago = () => {
+ return `<div class="section">
+ <div class="row">
+   <div class="col s12">
+     <div class="icon-block">
+       <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/santiago.png"/></h2>
+       <h5 class="center">Santiago Joseph</h5>
+       <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
+     </div>
+     </div>
+     </div>
+     </div>`
+}
+
+const viewAmelie = () => {
+  return `<div class="section">
+  <div class="row">
+    <div class="col s12">
+      <div class="icon-block">
+        <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/amelie.png"/></h2>
+        <h5 class="center">Amelie</h5>
+        <p class="light">Bachiller en Psicología y psicoterapeuta psicoanalítica</p>
+      </div>
+      </div>
+      </div>
+      </div>`
+}
 const htmlContainer = document.getElementById('navbar-container');
 htmlContainer.addEventListener('click', (event) => {
   const root = document.getElementById('root');
@@ -78,13 +120,13 @@ htmlContainer.addEventListener('click', (event) => {
    htmlSectionProfileView.addEventListener('click', (event) => {
     //console.log(event.target.className);
     if(event.target.id === 'psico-paloma'){
-      root.innerHTML = 'Paloma';
+      root.innerHTML = viewPaloma();
     }
     else if(event.target.id === 'psico-santiago'){
-      root.innerHTML = 'santiago';
+      root.innerHTML = viewSantiago();
     }
     else {
-      root.innerHTML = 'amelie';
+      root.innerHTML = viewAmelie();
     }
    })
 });
