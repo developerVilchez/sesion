@@ -83,6 +83,9 @@ const viewPaloma = () => {
         <h5 class="center">Paloma Reaño</h5>
         <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
       </div>
+      <div>
+      <button id="contacto-wasap">Contacta</button>
+      </div>
       </div>
       </div>
       </div>`
@@ -162,6 +165,10 @@ htmlContainer.addEventListener('click', (event) => {
           window.location = 'index.html';
         };
       });
+      const contactarWasap = document.getElementById('contacto-wasap');
+      contactarWasap.addEventListener('click', () => {
+        window.open('https://api.whatsapp.com/send?phone=51955412932&text=Hola!%20Quiero%20generar%20mas%20ventas')
+      })
     }
     else if(event.target.id === 'psico-santiago'){
       root.innerHTML = viewSantiago();
