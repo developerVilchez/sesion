@@ -133,14 +133,14 @@ p {
   height: 65px;
 }
 
-.img-logo{
+.img-logo {
   height: 64px;
 }
 
-.logo-mobile{
+.logo-mobile {
   display: inline-block;
   height: 56px;
-  margin-left: 120px;
+  margin-left: 100px;
 }
 
 .logo-mobile img {
