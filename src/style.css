@@ -131,16 +131,34 @@ p {
 .logo-mobile {
   display: inline-block;
   height: 56px;
-  margin-left: 100px;
 }
 
 .logo-mobile img {
   height: 56px;
 }
 
-.item:nth-child(4) {
-  background: var(--tertiary-color);
+#navbar-container-mobile ul li{
+  display: inline-block;
+  width: 100px;
+  line-height: 2;
+  text-align: center;
 }
+
+#navbar-container-mobile ul li a {
+  color: var(--text-color);
+  font-weight: bold;
+  height: 56px;
+}
+
+
+#navbar-container-mobile ul li:nth-child(3n) > a {
+  background: var(--primary-color);
+  
+}
+#navbar-container-mobile ul li a:hover {
+  background: var(--primary-color);
+}
+
 
 
 .info {
@@ -286,6 +304,10 @@ p {
   
   .img-logo {
     height: 64px;
+  }
+  
+  .item:nth-child(4) {
+    background: var(--tertiary-color);
   }
   
   .col.option, .col.service {
