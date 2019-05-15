@@ -135,18 +135,15 @@ p {
   height: 56px;
 }
 
-
-#navbar-container-mobile ul li a {
-  outline: 1px solid yellow;
+#navbar-container-mobile ul li {
   display: inline-block;
-  padding-top: 1.5em;
+}
+#navbar-container-mobile ul li a {
+  display: inline-block;
   color: var(--text-color);
   font-weight: bold;
-  height: 56px;
-  text-align: center;
-  width: 75px;
   font-size: 0.8em;
-  line-height: 1.2;
+  height: 55px;
 }
 
 
