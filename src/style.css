@@ -139,15 +139,18 @@ p {
 
 #navbar-container-mobile ul li{
   display: inline-block;
-  width: 100px;
-  line-height: 2;
-  text-align: center;
+  width: 85px;
+  line-height: 1.3;
 }
 
 #navbar-container-mobile ul li a {
+  padding-top: 0.7em;
   color: var(--text-color);
   font-weight: bold;
   height: 56px;
+  text-align: center;
+  vertical-align: middle;
+  
 }
 
 
