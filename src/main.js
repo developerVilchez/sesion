@@ -1,3 +1,5 @@
+
+
 const viewProfiles = () => {
   return `<header class="hero">
   <nav class="container navbar" id="navbar-container-psico-view">
@@ -84,12 +86,71 @@ const viewPaloma = () => {
         <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
       </div>
       <div>
-      <button id="contacto-wasap">Contacta</button>
+        <h3>Bio</h3>
+        <p>Paloma es ...</p>
+        <h3>Intereses</h3>
       </div>
+      <div class="icon-block">
+       <h3>Especialista en: </h3> 
+      <ul>
+        <li>- Psicoterapeuta de niños, adolescentes y adultos.</li>
+        <li>- Experiencia en trabajo vincular y asesoría de crianza a padres.</li>
+      </ul>
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="contacto-paloma">Contactar</a>
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Información Previa</h4>
+          <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Nombres y Apellidos</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">phone_iphone</i>
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Celular</label>
+              </div>
+              <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
+              <input id="icon_email" type="email" class="validate">
+              <label for="icon_email">Email</label>
+            </div>
+            </div>
+          </form> 
+          <h4>¿Cuántas sesiones deseas tomar?</h4>
+           <input type="radio" name="planes" value="1">Una sesión<br>
+           <input type="radio" name="planes" value="4">Paquete de 4 sesiones<br>
+           <input type="radio" name="planes" value="0">Todavía no lo decido
+           <h4>¿Qué te animó a iniciar una sesión?</h4>
+           <div class="row">
+           <form class="col s12">
+             <div class="row">
+               <div class="input-field col s6">
+                 <i class="material-icons prefix">mode_edit</i>
+                 <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                 <label for="icon_prefix2">Cuéntame</label>
+               </div>
+             </div>
+           </form>
+         </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="contacta-paloma-wasap">Inicia Sesión</a>
+        </div>
+      </div>
+        
+    </div>
       </div>
       </div>
       </div>`
 }
+
 
 const viewSantiago = () => {
  return ` <nav class="container navbar" id="navbar-container-psico-view-santiago">
@@ -165,11 +226,20 @@ htmlContainer.addEventListener('click', (event) => {
           window.location = 'index.html';
         };
       });
-      const contactarWasap = document.getElementById('contacto-wasap');
+      const contactarWasap = document.getElementById('contacto-paloma');
       contactarWasap.addEventListener('click', () => {
+          $('.modal').modal();
+      })
+      const wasap = document.getElementById('contacta-paloma-wasap');
+      wasap.addEventListener('click', () => {
         window.open('https://api.whatsapp.com/send?phone=51955412932&text=Hola!%20Quiero%20generar%20mas%20ventas')
       })
     }
+    //   const contactarWasap = document.getElementById('contacto-paloma');
+    //   contactarWasap.addEventListener('click', () => {
+    //     });
+    //    // window.open('https://api.whatsapp.com/send?phone=51955412932&text=Hola!%20Quiero%20generar%20mas%20ventas')
+    // }
     else if(event.target.id === 'psico-santiago'){
       root.innerHTML = viewSantiago();
       const navbarSantiago = document.getElementById('navbar-container-psico-view-santiago');

@@ -198,3 +198,10 @@ h5 {
   display: inline-block;
   height: 160px;
 }
+
+[type="radio"]:not(:checked), [type="radio"]:checked {
+  position: relative;
+  opacity: 1;
+  pointer-events: all;
+  display: inline-block;
+}
