@@ -1,3 +1,6 @@
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
 const replaceString = (string) => {
   let newString = '';
   for(let i = 0; i < string.length; i++){
@@ -316,6 +319,7 @@ const viewAmelie = () => {
 }
 
 const mainView = document.getElementById('root');
+
 
 mainView.addEventListener('click', (event) => {
   if (event.target.id === 'start-now') {
