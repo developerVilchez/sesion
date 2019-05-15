@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="vendors/materialize/css/materialize.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -39,10 +39,10 @@
   </section>
   </header>
   <!--section how work-->
-    <section id="how-work"  class="container info">
+    <section id="how-work"  class="container section">
       <div class="row">
         <div class="col s12">
-          <h2>¿Cómo funciona la terapia online?</h2>
+          <h2 class="section-title">¿Cómo funciona la terapia online?</h2>
         
           <div class="col s8 offset-s2 m5 option">
             <span class="big-number">1</span>
@@ -76,15 +76,15 @@
       </div>
     </section>
    <!--section team-->
-   <section id="team" class="info">
+   <section id="team" class="section section-gray">
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h3>Conoce a nuestro equipo</h3>
-            <p>Nuestro equipo está conformado por profesionales licenciados debidamente entrenados y verificados por Sesión, que te atenderán con la misma rigurosidad y confidencialidad que una terapia tradicional.</p>
-            <br>
-            <p>En Sesión tendrás al alcance de la mano y a un click de distancia los perfiles de los <span>psicoterapeutas ,</span><span>consejeros ,</span><span>psicólogos ,</span> y <span>coaches</span> de nuestra comunidad, quienes, con solo agendar una cita podrán atenderte desde la comodidad de tu hogar</p>
-            <a class="font-black" href="#sesion">Elije a tu terapeuta</a>
+            <h2 class="section-title">Conoce a nuestro equipo</h2>
+            <p>Nuestro equipo está conformado por profesionales licenciados debidamente entrenados y verificados por Sesión, que te atenderán con la misma rigurosidad y confidencialidad que en una terapia tradicional.</p>
+
+            <p>En Sesión tendrás al alcance de la mano y a un click de distancia los perfiles de los <span class="font-bold">psicoterapeutas</span>, <span class="font-bold">consejeros</span>, <span class="font-bold">psicólogos ,</span> y <span class="font-bold">coaches</span> de nuestra comunidad, quienes, con solo agendar una cita podrán atenderte desde la comodidad de tu hogar</p>
+            <a class="button-primary " href="#sesion">Elije a tu terapeuta</a>
           </div>
           <div class="col s6">
           </div>
@@ -92,41 +92,58 @@
       </div>
     </section>
      <!--section beneficios-->
-   <section id="benefits" class="info">
+   <section id="benefits" class="section">
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h3>Beneficios de la terapia online</h3>
+            <h2 class="section-title">Beneficios de la terapia online</h2>
           </div>
           <div class="row">
-              <div class="col s3">
-                  <i class="large material-icons">insert_chart</i>
+              <div class="col s6 offset-s3 m4 offset-m2 xl3 benefit">
+                  <i class="medium material-icons">phonelink</i>
+                  <h5>ONLINE</h5>
+                  <p class="p2">Solo necesitas un dispositivo y conexión a internet.</p>
               </div>
-              <div class="col s3">
-                  <i class="large material-icons">insert_chart</i>
+              <div class="col s6 offset-s3 m4 offset-m1 xl3 benefit">
+                  <i class="medium material-icons">people_outline</i>
+                  <h5>CONFIDENCIALIDAD</h5>
+                  <p class="p2">Trabajamos sobre la base del cuidado de la información que nos brindas.</p>
               </div>
-              <div class="col s3">
-                  <i class="large material-icons">insert_chart</i>
+              <div class="col s6 offset-s3 m4 offset-m2 xl3 benefit">
+                  <i class="medium material-icons">insert_invitation</i>
+                  <h5>AGENDA</h5>
+                  <p class="p2">Flexibilidad de horarios</p>
               </div>
-              <div class="col s3">
-                  <i class="large material-icons">insert_chart</i>
+              <div class="col s6 offset-s3 m4 offset-m1 xl3 benefit">
+                  <i class="medium material-icons">credit_card</i>
+                  <h5>FACILIDAD DE PAGO</h5>
+                  <p class="p2">A través de tarjetas de crédito/débito o depósito.</p>
               </div>
             </div>     
         </div>
       </div>
     </section>
-    <section id="services" class="info">
+    <section id="services" class="section section-yellow">
         <div class="container">
           <div class="row">
             <div class="col s12">
-              <h3>Nuestros Servicios</h3>
+              <h2 class="section-title">Nuestros Servicios</h2>
             </div>
             <div class="row">
-                <div class="col s6">
-                    <i class="large material-icons">insert_chart</i>
+                <div class="col s8 offset-s2 m4 offset-m2 service">
+                  <div>
+                    <span class="medium-number">1</span> <span class="h4">sesión individual</span>
+                    <p class="p2 service-note">(45 minutos)</p>
+                    <span class="medium-number">s/ 70</span>
+                  </div>
                 </div>
-                <div class="col s6">
-                    <i class="large material-icons">insert_chart</i>
+                <div class="col s8 offset-s2 m4 offset-m2 service">
+                    <div>
+                        <span class="medium-number">4</span> <span class="h4">sesiones</span>
+                        <p class="p2 service-note">(45 minutos c/u)</p>
+                        <span class="medium-number">s/ 250</span>
+                      </div>
+                    </div>
                 </div>
               </div>     
           </div>
