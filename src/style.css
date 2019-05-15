@@ -126,14 +126,13 @@ p {
  background:rgba(0,0,0,-0.1);
 }
 
-
-
 .logo-mobile {
   display: inline-block;
   height: 56px;
 }
 
 .logo-mobile img {
+  width: 95px;
   height: 56px;
 }
 
