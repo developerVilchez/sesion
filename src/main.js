@@ -64,7 +64,7 @@ const viewProfiles = () => {
 
 const viewPaloma = () => {
   return `
-  <section>
+  <section id="psico-1">
     <nav class="container navbar" id="navbar-container-psico-view-paloma">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
@@ -145,7 +145,7 @@ const viewPaloma = () => {
 
 const viewSantiago = () => {
  return `
- <section>
+ <section id="psico-2">
    <nav class="container navbar" id="navbar-container-psico-view-santiago">
      <div class="nav-wrapper">
        <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
@@ -225,7 +225,7 @@ const viewSantiago = () => {
 
 const viewAmelie = () => {
   return `
-  <section>
+  <section id="psico-3">
     <nav class="container navbar" id="navbar-container-psico-view-amelie">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
@@ -307,7 +307,7 @@ const htmlContainer = document.getElementById('navbar-container');
 
 htmlContainer.addEventListener('click', (event) => {
   const root = document.getElementById('root');
-  if(event.target.id === 'start-now'){
+  if (event.target.id === 'start-now') {
       root.innerHTML = viewProfiles();
     }; 
   const htmlContainerProfileView = document.getElementById('navbar-container-psico-view');
@@ -318,22 +318,22 @@ htmlContainer.addEventListener('click', (event) => {
       };
    });
    htmlSectionProfileView.addEventListener('click', (event) => {
-    if(event.target.id === 'psico-paloma'){
+    if (event.target.id === 'psico-paloma') {
       root.innerHTML = viewPaloma();
-      const navbarPaloma = document.getElementById('navbar-container-psico-view-paloma');
-      navbarPaloma.addEventListener('click', (event) => {
+      const viewPalomaFuntional = document.getElementById('psico-1');
+      //const navbarPaloma = document.getElementById('navbar-container-psico-view-paloma');
+      viewPalomaFuntional.addEventListener('click', (event) => {
+        console.log(event.target);
         if(event.target.className === 'img-logo'){
           window.location = 'index.html';
         };
-      });
-      const contactarWasapPaloma = document.getElementById('contacto-paloma');
-      contactarWasapPaloma.addEventListener('click', () => {
+        if(event.target.id === 'contacto-paloma'){
           $('.modal').modal();
-      })
-      const wasapPaloma = document.getElementById('contacta-paloma-wasap');
-      wasapPaloma.addEventListener('click', () => {
-        window.open('https://api.whatsapp.com/send?phone=51966422821&text=Hola!%20Quiero%20generar%20mas%20ventas')
-      })
+        };
+        if(event.target.id === 'contacta-paloma-wasap'){
+          window.open('https://api.whatsapp.com/send?phone=51966422821&text=Hola!%20Quiero%20generar%20mas%20ventas')
+        }
+      });
     }
     else if(event.target.id === 'psico-santiago'){
       root.innerHTML = viewSantiago();
@@ -343,14 +343,16 @@ htmlContainer.addEventListener('click', (event) => {
           window.location = 'index.html';
         };
       })
-      const contactarWasapSantiago = document.getElementById('contacto-santiago');
-      contactarWasapSantiago.addEventListener('click', () => {
-        $('.modal').modal();
-      })
-      const wasapSantiago = document.getElementById('contacta-santiago-wasap');
-      wasapSantiago.addEventListener('click', () => {
+      const viewSantiagoFuntional = document.getElementById('psico-2');
+      viewSantiagoFuntional.addEventListener('click', (event) => {
+        console.log(event.target.id);
+        if(event.target.id === "contacto-santiago"){
+          $('.modal').modal();
+        }
+       if(event.target.id === "contacta-santiago-wasap"){
         window.open('https://api.whatsapp.com/send?phone=51984119144&text=Hola!%20Quiero%20generar%20mas%20ventas%20santiago')
-      })      
+       }
+      })
     }
     else {
       root.innerHTML = viewAmelie();
