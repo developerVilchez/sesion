@@ -146,7 +146,7 @@ const viewPaloma = () => {
 const viewSantiago = () => {
  return `
  <section>
-   <nav class="container navbar" id="navbar-container-psico-view-paloma">
+   <nav class="container navbar" id="navbar-container-psico-view-santiago">
      <div class="nav-wrapper">
        <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
        <ul id="nav-mobile" class="right list-items">
@@ -176,7 +176,7 @@ const viewSantiago = () => {
           <li>- Experiencia en estrés laboral y crisis vitales.</li>
          </ul>
          <!-- Modal Trigger -->
-         <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="contacto-joseph">Contactar</a>
+         <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="contacto-santiago">Contactar</a>
          <!-- Modal Structure -->
          <div id="modal1" class="modal">
            <div class="modal-content">
@@ -214,7 +214,7 @@ const viewSantiago = () => {
              </div>
            </div>
            <div class="modal-footer">
-             <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="contacta-joseph-wasap">Inicia Sesión</a>
+             <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="contacta-santiago-wasap">Inicia Sesión</a>
            </div>
          </div>  
        </div>
@@ -272,20 +272,15 @@ htmlContainer.addEventListener('click', (event) => {
           window.location = 'index.html';
         };
       });
-      const contactarWasap = document.getElementById('contacto-paloma');
-      contactarWasap.addEventListener('click', () => {
+      const contactarWasapPaloma = document.getElementById('contacto-paloma');
+      contactarWasapPaloma.addEventListener('click', () => {
           $('.modal').modal();
       })
-      const wasap = document.getElementById('contacta-paloma-wasap');
-      wasap.addEventListener('click', () => {
+      const wasapPaloma = document.getElementById('contacta-paloma-wasap');
+      wasapPaloma.addEventListener('click', () => {
         window.open('https://api.whatsapp.com/send?phone=51955412932&text=Hola!%20Quiero%20generar%20mas%20ventas')
       })
     }
-    //   const contactarWasap = document.getElementById('contacto-paloma');
-    //   contactarWasap.addEventListener('click', () => {
-    //     });
-    //    // window.open('https://api.whatsapp.com/send?phone=51955412932&text=Hola!%20Quiero%20generar%20mas%20ventas')
-    // }
     else if(event.target.id === 'psico-santiago'){
       root.innerHTML = viewSantiago();
       const navbarSantiago = document.getElementById('navbar-container-psico-view-santiago');
@@ -294,6 +289,14 @@ htmlContainer.addEventListener('click', (event) => {
           window.location = 'index.html';
         };
       })
+      const contactarWasapSantiago = document.getElementById('contacto-santiago');
+      contactarWasapSantiago.addEventListener('click', () => {
+        $('.modal').modal();
+      })
+      const wasapSantiago = document.getElementById('contacta-santiago-wasap');
+      wasapSantiago.addEventListener('click', () => {
+        window.open('https://api.whatsapp.com/send?phone=51955412932&text=Hola!%20Quiero%20generar%20mas%20ventas%20santiago')
+      })      
     }
     else {
       root.innerHTML = viewAmelie();
