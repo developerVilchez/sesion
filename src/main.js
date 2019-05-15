@@ -1,3 +1,16 @@
+const replaceString = (string) => {
+  let newString = '';
+  for(let i = 0; i < string.length; i++){
+     if(string[i] === ' '){
+       newString +='%20'
+     } else {
+      newString += string[i];
+     }
+    }
+    return newString
+  }
+
+
 const viewProfiles = () => {
   return `
   <header class="hero" id="hero">
@@ -302,73 +315,44 @@ const viewAmelie = () => {
  </section>`
 }
 
-const htmlContainer = document.getElementById('navbar-container');
+const mainView = document.getElementById('root');
 
-htmlContainer.addEventListener('click', (event) => {
-  const root = document.getElementById('root');
+mainView.addEventListener('click', (event) => {
   if (event.target.id === 'start-now') {
-      root.innerHTML = viewProfiles();
+      event.currentTarget.innerHTML = viewProfiles();
     }; 
-  const htmlContainerProfileView = document.getElementById('navbar-container-psico-view');
-  const htmlSectionProfileView = document.getElementById('section-container-psico-view');
-  htmlContainerProfileView.addEventListener('click', (event) => {
-      if(event.target.className === 'img-logo'){
-        window.location = 'index.html';
-      };
-   });
-   htmlSectionProfileView.addEventListener('click', (event) => {
-    if (event.target.id === 'psico-paloma') {
-      root.innerHTML = viewPaloma();
-      const viewPalomaFuntional = document.getElementById('psico-1');
-      //const navbarPaloma = document.getElementById('navbar-container-psico-view-paloma');
-      viewPalomaFuntional.addEventListener('click', (event) => {
-        console.log(event.target);
-        if(event.target.className === 'img-logo'){
-          window.location = 'index.html';
-        };
-        if(event.target.id === 'contacto-paloma'){
-          $('.modal').modal();
-        };
-        if(event.target.id === 'contacta-paloma-wasap'){
-          window.open('https://api.whatsapp.com/send?phone=51966422821&text=Hola!%20Quiero%20generar%20mas%20ventas')
-        }
-      });
-    }
-    else if(event.target.id === 'psico-santiago'){
-      root.innerHTML = viewSantiago();
-      const navbarSantiago = document.getElementById('navbar-container-psico-view-santiago');
-      navbarSantiago.addEventListener('click', (event) => {
-        if(event.target.className === 'img-logo'){
-          window.location = 'index.html';
-        };
-      })
-      const viewSantiagoFuntional = document.getElementById('psico-2');
-      viewSantiagoFuntional.addEventListener('click', (event) => {
-        console.log(event.target.id);
-        if(event.target.id === "contacto-santiago"){
-          $('.modal').modal();
-        }
-       if(event.target.id === "contacta-santiago-wasap"){
-        window.open('https://api.whatsapp.com/send?phone=51984119144&text=Hola!%20Quiero%20generar%20mas%20ventas%20santiago')
-       }
-      })
-    }
-    else {
-      root.innerHTML = viewAmelie();
-      const navbarAmelie = document.getElementById('navbar-container-psico-view-amelie');
-      navbarAmelie.addEventListener('click', (event) => {
-        if(event.target.className === 'img-logo'){
-          window.location = 'index.html';
-        };
-      });
-      const contactarWasapAmelie = document.getElementById('contacto-amelie');
-      contactarWasapAmelie.addEventListener('click', () => {
-        $('.modal').modal();
-      })
-      const wasapAmelie = document.getElementById('contacta-amelie-wasap');
-      wasapAmelie.addEventListener('click', () => {
-        window.open('https://api.whatsapp.com/send?phone=51987959553&text=Hola!%20Quiero%20generar%20mas%20ventas%20santiago')
-      })      
+  if (event.target.className === 'img-logo') {
+      window.location = 'index.html';
     };
-   })
+  if (event.target.id === 'psico-paloma') {
+    event.currentTarget.innerHTML = viewPaloma();
+  } else if (event.target.id === 'psico-santiago') {
+    event.currentTarget.innerHTML = viewSantiago();
+  } else if (event.target.id === 'psico-amelie'){
+    event.currentTarget.innerHTML = viewAmelie();
+  }
+  if(event.target.id === 'psico-1' || event.target.id === 'psico-2' || event.target.id === 'psico3' ) {
+    if(event.target.className === 'img-logo'){
+      window.location = 'index.html';
+    };
+  }
+  if(event.target.id === 'contacto-paloma'){ 
+    console.log(event.target.id)
+    $('.modal').modal();
+  } else if (event.target.id === 'contacto-santiago'){
+    console.log(event.target.id)
+    $('.modal').modal();
+  } else if (event.target.id === 'contacto-amelie') {
+    console.log(event.target.id)
+    $('.modal').modal();
+  }
+  if(event.target.id === 'contacta-paloma-wasap') {
+    console.log(event.currentTarget)
+    const reason = document.getElementById('icon_prefix2');
+    window.open(`https://api.whatsapp.com/send?phone=51966422821&text=${replaceString(reason.value)}`)
+  } else if (event.target.id === 'contacta-santiago-wasap') {
+    console.log(event.target.id)
+  } else if (event.target.id === 'contacta-amelie-wasap') {
+    console.log(event.target.id)
+  }
 });
