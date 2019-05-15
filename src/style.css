@@ -237,7 +237,6 @@ p {
 
 .option {
   background-color: rgba(34, 156, 150, 0.15);
-  /*height: 150px;*/
   position: relative;
   background-color: rgba(59, 242, 150, 0.5);
 }
@@ -273,6 +272,20 @@ p {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.team {
+  height: 100vh;
+}
+
+.team h2 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.team a {
+  display: inline-block;
+  margin-top: 4em;
 }
 
 .benefit {
