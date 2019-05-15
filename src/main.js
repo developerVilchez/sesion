@@ -332,7 +332,7 @@ htmlContainer.addEventListener('click', (event) => {
       })
       const wasapPaloma = document.getElementById('contacta-paloma-wasap');
       wasapPaloma.addEventListener('click', () => {
-        window.open('https://api.whatsapp.com/send?phone=51955412932&text=Hola!%20Quiero%20generar%20mas%20ventas')
+        window.open('https://api.whatsapp.com/send?phone=51966422821&text=Hola!%20Quiero%20generar%20mas%20ventas')
       })
     }
     else if(event.target.id === 'psico-santiago'){
@@ -349,7 +349,7 @@ htmlContainer.addEventListener('click', (event) => {
       })
       const wasapSantiago = document.getElementById('contacta-santiago-wasap');
       wasapSantiago.addEventListener('click', () => {
-        window.open('https://api.whatsapp.com/send?phone=51955412932&text=Hola!%20Quiero%20generar%20mas%20ventas%20santiago')
+        window.open('https://api.whatsapp.com/send?phone=51984119144&text=Hola!%20Quiero%20generar%20mas%20ventas%20santiago')
       })      
     }
     else {
@@ -366,7 +366,7 @@ htmlContainer.addEventListener('click', (event) => {
       })
       const wasapAmelie = document.getElementById('contacta-amelie-wasap');
       wasapAmelie.addEventListener('click', () => {
-        window.open('https://api.whatsapp.com/send?phone=51955412932&text=Hola!%20Quiero%20generar%20mas%20ventas%20santiago')
+        window.open('https://api.whatsapp.com/send?phone=51987959553&text=Hola!%20Quiero%20generar%20mas%20ventas%20santiago')
       })      
     };
    })
