@@ -1,5 +1,3 @@
-
-
 const viewProfiles = () => {
   return `<header class="hero">
   <nav class="container navbar" id="navbar-container-psico-view">
@@ -66,6 +64,7 @@ const viewProfiles = () => {
 
 const viewPaloma = () => {
   return `
+  <section>
   <nav class="container navbar" id="navbar-container-psico-view-paloma">
   <div class="nav-wrapper">
     <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
@@ -77,21 +76,20 @@ const viewPaloma = () => {
     </ul>
   </div>
 </nav>
-  <div class="section">
-  <div class="row">
+<section class="row">
     <div class="col s12">
       <div class="icon-block">
         <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/paloma.png"/></h2>
         <h5 class="center">Paloma Reaño</h5>
         <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
-      </div>
-      <div>
-        <h3>Bio</h3>
-        <p>Paloma es ...</p>
-        <h3>Intereses</h3>
-      </div>
-      <div class="icon-block">
-       <h3>Especialista en: </h3> 
+    </div>
+    <div>
+      <h3>Bio</h3>
+      <p>Paloma es ...</p>
+      <h3>Intereses</h3>
+    </div>
+    <div class="icon-block">
+      <h3>Especialista en: </h3> 
       <ul>
         <li>- Psicoterapeuta de niños, adolescentes y adultos.</li>
         <li>- Experiencia en trabajo vincular y asesoría de crianza a padres.</li>
@@ -102,47 +100,46 @@ const viewPaloma = () => {
       <div id="modal1" class="modal">
         <div class="modal-content">
           <h4>Información Previa</h4>
-          <div class="row">
-          <form class="col s12">
             <div class="row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">Nombres y Apellidos</label>
-              </div>
-              <div class="input-field col s12">
-                <i class="material-icons prefix">phone_iphone</i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Celular</label>
-              </div>
-              <div class="input-field col s12">
-              <i class="material-icons prefix">email</i>
-              <input id="icon_email" type="email" class="validate">
-              <label for="icon_email">Email</label>
+              <form class="col s12">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">Nombres y Apellidos</label>
+                </div>
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">phone_iphone</i>
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Celular</label>
+                </div>
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">email</i>
+                  <input id="icon_email" type="email" class="validate">
+                  <label for="icon_email">Email</label>
+                </div>
+                <div class="input-field col s12">
+                  <h4>¿Cuántas sesiones deseas tomar?</h4>
+                  <input type="radio" name="planes" value="1">Una sesión<br>
+                  <input type="radio" name="planes" value="4">Paquete de 4 sesiones<br>
+                  <input type="radio" name="planes" value="0">Todavía no lo decido
+                </div>
+                <div class="input-field col s12">
+                  <h4>¿Qué te animó a iniciar una sesión?</h4>
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">Cuéntame</label>
+                </div>
+              </form> 
             </div>
-            </div>
-            <h4>¿Cuántas sesiones deseas tomar?</h4>
-            <input type="radio" name="planes" value="1">Una sesión<br>
-            <input type="radio" name="planes" value="4">Paquete de 4 sesiones<br>
-            <input type="radio" name="planes" value="0">Todavía no lo decido
-            <h4>¿Qué te animó a iniciar una sesión?</h4>
-            <div class="row">
-            <div class="input-field col s6">
-              <i class="material-icons prefix">mode_edit</i>
-              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-              <label for="icon_prefix2">Cuéntame</label>
-            </div>
-          </form> 
-        </div>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="contacta-paloma-wasap">Inicia Sesión</a>
-        </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="contacta-paloma-wasap">Inicia Sesión</a>
+          </div>
       </div>  
     </div>
-      </div>
-      </div>
-      </div>`
+    </div>
+  </section>
+  </section>`
 }
 
 
