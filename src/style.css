@@ -126,13 +126,10 @@ p {
  background:rgba(0,0,0,-0.1);
 }
 
-.logo-mobile {
-  display: inline-block;
-  height: 56px;
-}
 
-.logo-mobile img {
-  height: 56px;
+#logo-mobile {
+  font-size: 3em;
+  background: var(--primary-color);
 }
 
 #navbar-container-mobile ul li {
