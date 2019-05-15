@@ -351,8 +351,8 @@ mainView.addEventListener('click', (event) => {
     const reason = document.getElementById('icon_prefix2');
     window.open(`https://api.whatsapp.com/send?phone=51966422821&text=${replaceString(reason.value)}`)
   } else if (event.target.id === 'contacta-santiago-wasap') {
-    console.log(event.target.id)
+    window.open(`https://api.whatsapp.com/send?phone=51984119144&text=${replaceString(reason.value)}`)
   } else if (event.target.id === 'contacta-amelie-wasap') {
-    console.log(event.target.id)
+    window.open(`https://api.whatsapp.com/send?phone=51987959553&text=${replaceString(reason.value)}`)
   }
 });
