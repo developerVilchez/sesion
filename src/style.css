@@ -147,6 +147,7 @@ p {
  }
  
 .info {
+ outline: 1px solid red;
  padding-top: 8em;
  padding-bottom: 4em;
 }
