@@ -85,6 +85,8 @@ p {
  padding: 1em;
  display: inline-block;
  margin-top: 1em;
+ color: var(--text-color);
+ font-weight: bold;
 }
 
 .big-number {
@@ -145,13 +147,14 @@ p {
  }
  
 .info {
- outline: 1px solid red; 
- padding-top: 4em;
+ padding-top: 8em;
  padding-bottom: 4em;
 }
 
-
-
+.info-logo {
+  display: inline-block;
+  margin-bottom: 2em;
+}
 .info-title {
   font-family: var(--primary-font);
   font-size: 3em;
