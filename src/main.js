@@ -121,30 +121,24 @@ const viewPaloma = () => {
               <label for="icon_email">Email</label>
             </div>
             </div>
+            <h4>¿Cuántas sesiones deseas tomar?</h4>
+            <input type="radio" name="planes" value="1">Una sesión<br>
+            <input type="radio" name="planes" value="4">Paquete de 4 sesiones<br>
+            <input type="radio" name="planes" value="0">Todavía no lo decido
+            <h4>¿Qué te animó a iniciar una sesión?</h4>
+            <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Cuéntame</label>
+            </div>
           </form> 
-          <h4>¿Cuántas sesiones deseas tomar?</h4>
-           <input type="radio" name="planes" value="1">Una sesión<br>
-           <input type="radio" name="planes" value="4">Paquete de 4 sesiones<br>
-           <input type="radio" name="planes" value="0">Todavía no lo decido
-           <h4>¿Qué te animó a iniciar una sesión?</h4>
-           <div class="row">
-           <form class="col s12">
-             <div class="row">
-               <div class="input-field col s6">
-                 <i class="material-icons prefix">mode_edit</i>
-                 <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                 <label for="icon_prefix2">Cuéntame</label>
-               </div>
-             </div>
-           </form>
-         </div>
         </div>
         </div>
         <div class="modal-footer">
           <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="contacta-paloma-wasap">Inicia Sesión</a>
         </div>
-      </div>
-        
+      </div>  
     </div>
       </div>
       </div>
