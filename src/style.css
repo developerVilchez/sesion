@@ -127,6 +127,7 @@ p {
  background:rgba(0,0,0,-0.1);
 }
 
+
 .logo {
   display: inline-block;
   height: 65px;
@@ -136,9 +137,20 @@ p {
   height: 64px;
 }
 
+.logo-mobile{
+  display: inline-block;
+  height: 56px;
+  margin-left: 120px;
+}
+
+.logo-mobile img {
+  height: 56px;
+}
+
 .item:nth-child(4) {
   background: var(--tertiary-color);
 }
+
 
 .info {
   padding-top: 120px;
