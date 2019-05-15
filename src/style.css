@@ -132,25 +132,23 @@ p {
 }
 
 .logo-mobile img {
-  width: 95px;
   height: 56px;
 }
 
 #navbar-container-mobile ul li{
   display: inline-block;
-  width: 85px;
   line-height: 1.3;
+  vertical-align: middle;
 }
 
 #navbar-container-mobile ul li a {
-  padding-top: 0.7em;
+  padding-top: 1em;
   color: var(--text-color);
   font-weight: bold;
   height: 56px;
   text-align: center;
-  vertical-align: middle;
   font-size: 0.9em;
-  
+  font-size: 1em;
 }
 
 
