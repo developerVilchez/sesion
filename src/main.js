@@ -322,7 +322,7 @@ const mainView = document.getElementById('root');
 
 
 mainView.addEventListener('click', (event) => {
-  if (event.target.id === 'start-now' || event.target.id === 'start-now-mobile' || event.target.id === 'start-now-info') {
+  if (event.target.id === 'start-now' || event.target.id === 'start-now-mobile' || event.target.id === 'start-now-info' || event.target.id === 'choose-psico') {
       event.currentTarget.innerHTML = viewProfiles();
     }; 
   if (event.target.className === 'img-logo') {
