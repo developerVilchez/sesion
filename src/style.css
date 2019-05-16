@@ -157,7 +157,7 @@ p {
 
 .container-items-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
  #navbar-container-mobile ul li {
