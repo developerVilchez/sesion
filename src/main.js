@@ -17,17 +17,14 @@ const replaceString = (string) => {
 const viewProfiles = () => {
   return `
   <header class="hero" id="hero">
-    <nav class="container navbar" id="navbar-container-psico-view">
-      <div class="nav-wrapper">
+  <div id="navbar-container-mobile" class="navbar-fixed">
+  <nav class="navbar navbar-profile">
+      <ul class="container-items-menu-profiles">
         <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
-        <ul id="nav-mobile" class="right list-items">
-          <li class="item"><a class="font-black" href="#how-work">¿Cómo Funciona?</a></li>
-          <li class="item"><a class="font-black" href="#team">El equipo</a></li>
-          <li class="item"><a class="font-black" href="#faq">FAQ</a></li>
-          <li class="item"><a  id="start-now" class="font-black" href="#sesion">Empezar ahora</a></li>
-        </ul>
-      </div>
-    </nav>
+      </ul>
+    </div>
+  </nav>
+</div> 
     <section class="container section">
       <div class="row">
         <div class="col s12">

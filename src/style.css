@@ -145,11 +145,14 @@ p {
 .navbar {
   background:rgba(0,0,0,-0.1);
  }
+
+ .navbar-profile {
+   height: 96px;
+ }
  
  #logo-mobile {
    background: var(--primary-color);
  }
-
 
  nav ul a {
   padding: 0;
@@ -158,6 +161,20 @@ p {
 .container-items-menu {
   display: flex;
   justify-content: space-around;
+}
+
+.container-items-menu-profiles {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-items-menu-profiles a {
+  display: inline-block;
+  height: 96px;
+}  
+
+.container-items-menu-profiles img {
+  margin-right: 13em;
 }
 
  #navbar-container-mobile ul li {
