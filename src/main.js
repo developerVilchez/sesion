@@ -28,53 +28,64 @@ const viewProfiles = () => {
         </ul>
       </div>
     </nav>
-    <div class="container">
+    <section class="container section">
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/paloma.png"/></h2>
-            <h5 class="center">Paloma Reaño</h5>
-            <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
-          </div>
-          <div class="icon-block">
-            <ul>
-              <li>- Psicoterapeuta de niños, adolescentes y adultos.</li>
-              <li>- Experiencia en trabajo vincular y asesoría de crianza a padres.</li>
-            </ul>
-            <a id="psico-paloma">Ver Perfil</a>
+        <div class="col s12">
+          <h2 class="section-title">Psicoterapeutas</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 xl4">
+          <div class="profile-preview card">
+            <div class="icon-block">
+                <div class="center"><img class="circle responsive-img profile" src="images/paloma.png"/></div>
+                <h4 class="center">Paloma Reaño</h4>
+                <p class="caption light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
+              </div>
+              <div class="content-block">
+                <ul class="bullet-list">
+                  <li>Psicoterapeuta de niños, adolescentes y adultos.</li>
+                  <li>Experiencia en trabajo vincular y asesoría de crianza a padres.</li>
+                </ul>
+                <a id="psico-paloma" class="button-secondary">Ver Perfil</a>
+              </div>
           </div>
         </div>
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/santiago.png"/></h2>
-            <h5 class="center">Santiago Joseph</h5>
-            <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
-          </div>
-          <div class="icon-block">
-            <ul>
-              <li>- Psicoterapeuta de adolescentes y adultos.</li>
-              <li>- Experiencia en estrés laboral y crisis vitales.</li>
-            </ul>
-            <a id="psico-santiago">Ver Perfil</a>
+        <div class="col s12 m6 xl4">
+          <div class="profile-preview card">
+            <div class="icon-block">
+                <div class="center"><img class="circle responsive-img profile" src="images/santiago.png"/></div>
+                <h4 class="center">Santiago Joseph</h4>
+                <p class="caption light">Lic. En Psicología Clínica y Mg. En Estudios Teóricos en Psicoanálisis</p>
+              </div>
+              <div class="content-block">
+                <ul class="bullet-list">
+                  <li>Psicoterapeuta de adolescentes y adultos.</li>
+                  <li>Experiencia en estrés laboral y crisis vitales.</li>
+                </ul>
+                <a id="psico-santiago" class="button-secondary">Ver Perfil</a>
+              </div>
           </div>
         </div>
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/amelie.png"/></h2>
-            <h5 class="center">Amelie</h5>
-            <p class="light">Bachiller en Psicología y psicoterapeuta psicoanalítica</p>
-          </div>
-          <div class="icon-block">
-            <ul>
-              <li>- Psicoterapeuta psicoanalítica egresada del Instituto Inter-Cambio.</li>
-              <li>- Experiencia en asesoría pedagógica y orientación a padres de familia en estilos de crianza.</li>
-            </ul>
-            <a id="psico-amelie">Ver Perfil</a>
+        <div class="col s12 m6 xl4">
+          <div class="profile-preview card">
+            <div class="icon-block">
+                <div class="center"><img class="circle responsive-img profile" src="images/amelie.png"/></div>
+                <h4 class="center">Amelie</h4>
+                <p class="caption light">LBachiller en Psicología y psicoterapeuta psicoanalítica</p>
+              </div>
+              <div class="content-block">
+                <ul class="bullet-list">
+                  <li>Psicoterapeuta psicoanalítica egresada del Instituto Inter-Cambio.</li>
+                  <li>Experiencia en asesoría pedagógica y orientación a padres de familia en estilos de crianza</li>
+                </ul>
+                <a id="psico-amelie" class="button-secondary">Ver Perfil</a>
+              </div>
           </div>
         </div>
       </div>
-  </div>
-</header>`  
+    </section>
+  </header>`  
 }
 
 const viewPaloma = () => {
