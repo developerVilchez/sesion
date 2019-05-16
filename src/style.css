@@ -162,14 +162,14 @@ p {
 
  #navbar-container-mobile ul li {
    display: inline-block;
-   width: 9em;
+   width: 7em;
  }
 
  #navbar-container-mobile ul li a {
    display: inline-block;
    color: var(--text-color);
    font-weight: bold;
-   font-size: 0.8em;
+   font-size: 0.7em;
    width: 11em;
    text-align: center;
  }
