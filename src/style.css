@@ -288,6 +288,9 @@ p {
   margin-top: 4em;
 }
 
+.benefits {
+  height: 100vh;
+}
 .benefit {
   margin-top: 30px;
   text-align: center;
