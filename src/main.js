@@ -17,14 +17,13 @@ const replaceString = (string) => {
 const viewProfiles = () => {
   return `
   <header class="hero" id="hero">
-  <div id="navbar-container-mobile" class="navbar-fixed">
-  <nav class="navbar navbar-profile">
-      <ul class="container-items-menu-profiles">
-        <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
-      </ul>
-    </div>
-  </nav>
-</div> 
+    <div id="navbar-container-mobile" class="navbar-fixed">
+      <nav class="navbar navbar-profiles">
+        <ul class="container-items-menu-profiles">
+          <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
+        </ul>
+      </nav>
+    </div> 
     <section class="container section">
       <div class="row">
         <div class="col s12">
@@ -35,15 +34,15 @@ const viewProfiles = () => {
         <div class="col s12 m6 xl4">
           <div class="profile-preview card">
             <div class="icon-block">
-                <div class="center"><img class="circle responsive-img profile" src="images/paloma.png"/></div>
-                <h4 class="center">Paloma Reaño</h4>
-                <p class="caption light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
-              </div>
-              <div class="content-block">
-                <ul class="bullet-list">
-                  <li>Psicoterapeuta de niños, adolescentes y adultos.</li>
-                  <li>Experiencia en trabajo vincular y asesoría de crianza a padres.</li>
-                </ul>
+              <div class="center"><img class="circle responsive-img profile" src="images/paloma.png"/></div>
+              <h4 class="center">Paloma Reaño</h4>
+              <p class="caption light">Psicóloga clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
+            </div>
+            <div class="content-block">
+              <ul class="bullet-list">
+                <li>Psicoterapeuta de niños, adolescentes y adultos.</li>
+                <li>Experiencia en trabajo vincular y asesoría de crianza a padres.</li>
+              </ul>
                 <a id="psico-paloma" class="button-secondary">Ver Perfil</a>
               </div>
           </div>
