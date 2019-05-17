@@ -68,7 +68,7 @@ const viewProfiles = () => {
             <div class="icon-profile">
                 <div class="center"><img class="circle responsive-img profile" src="images/amelie.png"/></div>
                 <h4 class="center">Amélie Caillaux</h4>
-                <p class="caption light">Psicóloga y psicoterapeuta psicoanalítica</p>
+                <p class="caption light">Psicóloga y terapeuta psicoanalítica</p>
               </div>
               <div class="profile-content-block">
                 <ul class="bullet-list">
