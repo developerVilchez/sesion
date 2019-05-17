@@ -376,11 +376,10 @@ p {
 }
 
 .profile-preview .button-secondary {
-  margin-right: auto;
-  margin-left: 3em; 
+  margin-left: 3em;
 }
 
-.profile-preview .button-secondary:hover {
+.profile-preview.button-secondary:hover {
   cursor: pointer;
   color: #FAFAFC;
   background: #229C96;
