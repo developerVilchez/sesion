@@ -33,12 +33,12 @@ const viewProfiles = () => {
       <div class="row">
         <div class="col s12 m6 xl4">
           <div class="profile-preview card">
-            <div class="icon-block">
+            <div class="icon-profile">
               <div class="center"><img class="circle responsive-img profile" src="images/paloma.png"/></div>
               <h4 class="center">Paloma Reaño</h4>
               <p class="caption light">Psicóloga clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
             </div>
-            <div class="content-block">
+            <div class="profile-content-block">
               <ul class="bullet-list">
                 <li>Psicoterapeuta de niños, adolescentes y adultos.</li>
                 <li>Experiencia en trabajo vincular y asesoría de crianza a padres.</li>
@@ -49,12 +49,12 @@ const viewProfiles = () => {
         </div>
         <div class="col s12 m6 xl4">
           <div class="profile-preview card">
-            <div class="icon-block">
+            <div class="icon-profile">
                 <div class="center"><img class="circle responsive-img profile" src="images/santiago.png"/></div>
                 <h4 class="center">Santiago Joseph</h4>
                 <p class="caption light">Lic. En Psicología Clínica y Mg. En Estudios Teóricos en Psicoanálisis</p>
               </div>
-              <div class="content-block">
+              <div class="profile-content-block">
                 <ul class="bullet-list">
                   <li>Psicoterapeuta de adolescentes y adultos.</li>
                   <li>Experiencia en estrés laboral y crisis vitales.</li>
@@ -65,12 +65,12 @@ const viewProfiles = () => {
         </div>
         <div class="col s12 m6 xl4">
           <div class="profile-preview card">
-            <div class="icon-block">
+            <div class="icon-profile">
                 <div class="center"><img class="circle responsive-img profile" src="images/amelie.png"/></div>
                 <h4 class="center">Amelie</h4>
                 <p class="caption light">LBachiller en Psicología y psicoterapeuta psicoanalítica</p>
               </div>
-              <div class="content-block">
+              <div class="profile-content-block">
                 <ul class="bullet-list">
                   <li>Psicoterapeuta psicoanalítica egresada del Instituto Inter-Cambio.</li>
                   <li>Experiencia en asesoría pedagógica y orientación a padres de familia en estilos de crianza</li>
@@ -100,7 +100,7 @@ const viewPaloma = () => {
     </nav>
     <section class="row">
       <div class="col s12">
-        <div class="icon-block">
+        <div class="icon-profile">
           <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/paloma.png"/></h2>
           <h5 class="center">Paloma Reaño</h5>
           <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
@@ -110,7 +110,7 @@ const viewPaloma = () => {
           <p>Paloma es ...</p>
           <h3>Intereses</h3>
         </div>
-        <div class="icon-block">
+        <div class="icon-profile">
           <h3>Especialista en: </h3> 
           <ul>
            <li>- Psicoterapeuta de niños, adolescentes y adultos.</li>
@@ -181,7 +181,7 @@ const viewSantiago = () => {
     </nav>
     <section class="row">
      <div class="col s12">
-       <div class="icon-block">
+       <div class="icon-profile">
          <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/santiago.png"/></h2>
          <h5 class="center">Santiago Joseph</h5>
          <p class="light">Lic. En Psicología Clínica y Mg. en Estudios Teóricos en Psicoanálisis</p>
@@ -191,7 +191,7 @@ const viewSantiago = () => {
          <p>Santiago es ...</p>
          <h3>Intereses</h3>
        </div>
-       <div class="icon-block">
+       <div class="icon-profile">
          <h3>Especialista en: </h3> 
          <ul>
           <li>- Psicoterapeuta de adolescentes y adultos.</li>
@@ -261,7 +261,7 @@ const viewAmelie = () => {
      </nav>
      <section class="row">
        <div class="col s12">
-         <div class="icon-block">
+         <div class="icon-profile">
            <h2 class="center brown-text"><img class="circle responsive-img profile" src="images/amelie.png"/></h2>
            <h5 class="center">Amelie</h5>
            <p class="light">Psicóloga y psicoterapeuta psicoanalítica</p>
@@ -271,7 +271,7 @@ const viewAmelie = () => {
          <p>Amelié es ...</p>
          <h3>Intereses</h3>
        </div>
-       <div class="icon-block">
+       <div class="icon-profile">
          <h3>Especialista en: </h3> 
          <ul>
            <li>- Psicoterapeuta psicoanalítica egresada del instituto Inter-Cambio.</li>
