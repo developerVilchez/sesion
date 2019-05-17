@@ -343,19 +343,9 @@ nav ul a {
   height: 160px;
 }
 
-.navbar-profiles {
-  height: 96px;
+.profile-navbar img{
+  height: 58px;
 }
-
-.container-items-menu-profiles a {
-  display: inline-block;
-  height: 96px;
-}  
-
-.container-items-menu-profiles img {
-  margin-right: 13em;
-}
-
 
 .icon-profile {
   background-color: var(--light-blue);

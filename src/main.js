@@ -17,12 +17,12 @@ const replaceString = (string) => {
 const viewProfiles = () => {
   return `
   <header class="hero" id="hero">
-    <div id="navbar-container-mobile" class="navbar-fixed">
-      <nav class="navbar navbar-profiles">
-        <ul class="navbar-container-items-mobile">
-          <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
-        </ul>
-      </nav>
+    <div id="navbar-profile-container-mobile" class="navbar-fixed">
+    <nav class="navbar profile-navbar">
+      <ul class="navbar-container-items-mobile">
+       <li><a href="#" class="brand-logo logo info-logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a></li>
+      </ul>
+    </nav>
     </div> 
     <section class="container section">
       <div class="row">
