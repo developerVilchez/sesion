@@ -73,7 +73,7 @@ const viewProfiles = () => {
               <div class="profile-content-block">
                 <ul class="bullet-list">
                   <li>Psicoterapeuta psicoanalítica egresada del Instituto Inter-Cambio.</li>
-                  <li>Experiencia en asesoría pedagógica y orientación a padres de familia en estilos de crianza</li>
+                  <li>Experiencia en asesoría pedagógica y orientación a padres de familia en estilos de crianza.</li>
                 </ul>
                 <a id="psico-amelie" class="button-secondary">Ver Perfil</a>
               </div>
