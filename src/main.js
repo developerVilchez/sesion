@@ -52,7 +52,7 @@ const viewProfiles = () => {
             <div class="icon-profile">
                 <div class="center"><img class="circle responsive-img profile" src="images/santiago.png"/></div>
                 <h4 class="center">Santiago Joseph</h4>
-                <p class="caption light">Lic. En Psicología Clínica y Mg. En Estudios Teóricos en Psicoanálisis</p>
+                <p class="caption light">Psicólogo Clínico y Mg. En Estudios Teóricos en Psicoanálisis</p>
               </div>
               <div class="profile-content-block">
                 <ul class="bullet-list">
@@ -67,8 +67,8 @@ const viewProfiles = () => {
           <div class="profile-preview card">
             <div class="icon-profile">
                 <div class="center"><img class="circle responsive-img profile" src="images/amelie.png"/></div>
-                <h4 class="center">Amelie</h4>
-                <p class="caption light">LBachiller en Psicología y psicoterapeuta psicoanalítica</p>
+                <h4 class="center">Amélie Caillaux</h4>
+                <p class="caption light">Psicóloga y psicoterapeuta psicoanalítica</p>
               </div>
               <div class="profile-content-block">
                 <ul class="bullet-list">
