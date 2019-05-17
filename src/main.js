@@ -18,11 +18,11 @@ const viewProfiles = () => {
   return `
   <header class="hero" id="hero">
     <div id="navbar-profile-container-mobile" class="navbar-fixed">
-    <nav class="navbar profile-navbar">
-      <ul class="navbar-container-items-mobile">
-       <li><a href="#" class="brand-logo logo info-logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a></li>
-      </ul>
-    </nav>
+      <nav class="navbar profile-navbar">
+        <ul class="navbar-container-items-mobile">
+         <li><a href="#" class="brand-logo logo info-logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a></li>
+        </ul>
+      </nav>
     </div> 
     <section class="container section">
       <div class="row">
@@ -87,17 +87,13 @@ const viewProfiles = () => {
 const viewPaloma = () => {
   return `
   <section id="psico-1">
-    <nav class="container navbar" id="navbar-container-psico-view-paloma">
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
-        <ul id="nav-mobile" class="right list-items">
-          <li class="item"><a class="font-black" href="#how-work">¿Cómo Funciona?</a></li>
-          <li class="item"><a class="font-black" href="#team">El equipo</a></li>
-          <li class="item"><a class="font-black" href="#faq">FAQ</a></li>
-          <li class="item"><a  id="start-now" class="font-black" href="#sesion">Empezar ahora</a></li>
+    <div id="navbar-profile-container-mobile" class="navbar-fixed">
+      <nav class="navbar profile-navbar">
+        <ul class="navbar-container-items-mobile">
+         <li><a href="#" class="brand-logo logo info-logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <section class="row">
       <div class="col s12">
         <div class="icon-profile">
