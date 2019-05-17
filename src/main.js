@@ -19,7 +19,7 @@ const viewProfiles = () => {
   <header class="hero" id="hero">
     <div id="navbar-container-mobile" class="navbar-fixed">
       <nav class="navbar navbar-profiles">
-        <ul class="container-items-menu-profiles">
+        <ul class="navbar-container-items-mobile">
           <a href="#" class="brand-logo logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a>
         </ul>
       </nav>

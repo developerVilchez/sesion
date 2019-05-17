@@ -47,9 +47,7 @@ body {
   background-color: var(--light-yellow);
 }
 
-
 /* Tipografía */
-
 .font-black {
   color: var(--text-color);
 }
@@ -208,43 +206,26 @@ p {
   background:rgba(0,0,0,-0.1);
  }
 
- .navbar-profiles {
-   height: 96px;
- }
- 
- nav ul a {
-  padding: 0;
+nav {
+  line-height: 58px;
 }
 
-.container-items-menu {
+#navbar-container-mobile ul {
+  height: 4em;
   display: flex;
   justify-content: space-around;
 }
 
-.container-items-menu-profiles a {
-  display: inline-block;
-  height: 96px;
-}  
+nav ul a {
+  padding: 0;
+  margin-left:0;
+} 
 
-.container-items-menu-profiles img {
-  margin-right: 13em;
-}
-
- #navbar-container-mobile ul li {
-   display: inline-block;
-   width: 7em;
- }
-
- #navbar-container-mobile ul li a {
-   display: inline-block;
-   color: var(--text-color);
-   font-weight: bold;
-   font-size: 0.68em;
-   width: 11em;
+#navbar-container-mobile ul li a {
+   width: 106.66px;
    text-align: center;
- }
-  #navbar-container-mobile ul li a:nth-child(3n) {
-   background: var(--primary-color);
+   font-size: 0.68em;
+   color: var(--text-color);
  }
  
  #navbar-container-mobile ul li a:hover {
@@ -362,6 +343,20 @@ p {
   height: 160px;
 }
 
+.navbar-profiles {
+  height: 96px;
+}
+
+.container-items-menu-profiles a {
+  display: inline-block;
+  height: 96px;
+}  
+
+.container-items-menu-profiles img {
+  margin-right: 13em;
+}
+
+
 .icon-profile {
   background-color: var(--light-blue);
   padding: 30px 15% 15px;
@@ -376,7 +371,8 @@ p {
 }
 
 .profile-preview .button-secondary {
-  margin-left: 3em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .profile-preview.button-secondary:hover {
