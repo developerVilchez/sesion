@@ -376,6 +376,20 @@ nav ul a {
 }
 
 
+.container-inputs {
+  outline: 1px solid var(--secondary-color);
+  padding: 0.5em;
+}
+[type="radio"]:not(:checked), [type="radio"]:checked {
+  position: static;
+  opacity: 0;
+}
+
+#contacta-santiago-wasap {
+  color: var(--light-gray);
+  padding-bottom: 3em;
+}
+
 @media only screen and (max-width: 600px) {
   .profile-preview {
     max-width: 350px;
@@ -387,14 +401,6 @@ nav ul a {
   .profile-preview {
     height: 520px;
   }
-}
-
-
-[type="radio"]:not(:checked), [type="radio"]:checked {
-  position: relative;
-  opacity: 1;
-  pointer-events: all;
-  display: inline-block;
 }
 
 #navbar-container-desktop {
