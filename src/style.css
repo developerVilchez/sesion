@@ -4,7 +4,7 @@
   --secondary-color: #229C96;
   --tertiary-color: #00BE67;
   --light-gray: #FAFAFC;
-  --light-yellow:#F9F6EB;
+  --light-yellow:#FBFAEF;
   --light-blue: rgba(34, 156, 150, 0.2);
   --text-color: #333333;
   --primary-font: 'Roboto Condensed', sans-serif;
@@ -27,7 +27,19 @@ body {
 
 /* Para las secciones how-work - team - benefits - services */
 .section {
-  padding: 60px 0 40px;
+  padding: 70px 0 40px;
+}
+
+.section-small {
+  padding-bottom: 0;
+}
+
+.section-small .row {
+  margin-bottom: 0;
+}
+
+.section-title {
+  margin-bottom: 1.5em;
 }
 
 .section-title::after {
@@ -81,7 +93,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 h3, .h3 {
@@ -261,9 +273,12 @@ nav ul a {
 }
 
 /* Section how work*/
+
+/*
 .how-work h2 {
  padding-top: 1.5em;
 }
+*/
 
 .option {
   background-color: rgba(34, 156, 150, 0.15);
@@ -272,11 +287,13 @@ nav ul a {
 }
 
 /* Section team */
+
+/*
 .team h2 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-
+*/
 .team a {
   display: inline-block;
   margin-top: 4em;
@@ -284,9 +301,11 @@ nav ul a {
 
 /* Section benefits */
 
+/*
 .benefits h2 {
   padding-top: 1.5em;
  }
+*/
 
 .option, .service {
   margin-bottom: 40px;
@@ -403,6 +422,13 @@ nav ul a {
   padding-bottom: 3em;
 }
 
+
+/* Estilos form */
+
+.input-field .prefix.active {
+  color: var(--tertiary-color);
+}
+
 @media only screen and (max-width: 600px) and (min-width: 375px) {
   .bg-image {
     max-height: 568px;
@@ -436,6 +462,18 @@ nav ul a {
 
 
 @media only screen and (min-width: 601px) {
+  /* Tipografía */
+
+  .info-title {
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  /* Logo */
+
   .logo {
     display: inline-block;
     height: 65px;
@@ -450,7 +488,7 @@ nav ul a {
     max-height: initial;
     /*height: 520px;*/
   }
-  
+
   .item:nth-child(4) {
     background: var(--tertiary-color);
   }

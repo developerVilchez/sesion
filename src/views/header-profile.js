@@ -8,7 +8,7 @@ const HeaderProfile = () => {
       </ul>
     </nav>
   </div> 
-  <section class="container section">
+  <section class="container section section-small">
     <div class="row">
       <div class="col s12">
         <h2 class="section-title">Psicoterapeutas</h2>
