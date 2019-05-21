@@ -1,5 +1,4 @@
 const SectionDetailPsicoProfile = (psico) => {
-  console.log(psico)
   return `
     <section class="row">
       <div class="col s12">
