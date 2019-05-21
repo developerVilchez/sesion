@@ -14,7 +14,7 @@ const HeaderProfile = () => {
         <h2 class="section-title">Psicoterapeutas</h2>
       </div>
     </div>
-   <section/>
-   <header/>
+   </section>
+   </header>
    `
 }
