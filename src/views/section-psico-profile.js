@@ -11,10 +11,12 @@ const SectionPsicoProfile = (psicos) => {
            <p class="caption light">${data[key].formacion}</p>
          </div>
          <div class="profile-content-block">
-              <ul class="bullet-list">
-                ${listaEspecialidadProfile(data[key].especilidades)}
-              </ul>
-            <a id=${keysData[ind]} class="button-secondary">Ver Perfil</a>
+            <ul class="bullet-list">
+              ${listaEspecialidadProfile(data[key].especilidades)}
+            </ul>
+            <div class="profile-preview-button">
+              <a id=${keysData[ind]} class="button-secondary">Ver Perfil</a>
+            </div>
         </div>
      </div>
    </div>`
