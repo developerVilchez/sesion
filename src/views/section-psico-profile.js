@@ -15,7 +15,7 @@ const SectionPsicoProfile = (psicos) => {
               <ul class="bullet-list">
                 ${listaEspecialidadProfile(data[key].especilidades)}
               </ul>
-            <a id="psico-paloma" class="button-secondary">Ver Perfil</a>
+            <a id=${keysData[ind]} class="button-secondary">Ver Perfil</a>
         </div>
      </div>
    </div>`
