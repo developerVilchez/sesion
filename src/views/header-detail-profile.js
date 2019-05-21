@@ -1,9 +1,0 @@
-const HeaderDetailProfile = () => {
-  return `<div id="navbar-profile-container-mobile" class="navbar-fixed">
-            <nav class="navbar profile-navbar">
-              <ul class="navbar-container-items-mobile">
-                <li><a href="#" class="brand-logo logo info-logo"><img class="img-logo" alt="logo-sesion" src="images/sesion7_200x96.png"/></a></li>
-              </ul>
-            </nav>
-          </div>`
-      }
