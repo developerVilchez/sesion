@@ -1,5 +1,5 @@
 const SectionPsicoProfile = (psicos) => {
-  let string = `<div class="row">`;
+  let string = `<div class="container"><div class="row">`;
   const keysData = Object.keys(psicos);
   keysData.forEach((key, ind) => {
    string += `
@@ -21,7 +21,7 @@ const SectionPsicoProfile = (psicos) => {
      </div>
    </div>`
   })
-  string += `<div/>`
+  string += `<div/><div/>`
   return string;
  }
  

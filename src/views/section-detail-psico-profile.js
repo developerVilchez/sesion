@@ -1,5 +1,6 @@
 const SectionDetailPsicoProfile = (psico) => {
   return `
+  <div class="container">
     <section class="row">
       <div class="col s12">
         <div class="icon-profile">
@@ -14,6 +15,7 @@ const SectionDetailPsicoProfile = (psico) => {
           </ul>
         </div>
     </section>
+   </div>
   <!-- Modal Trigger -->
   <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id=${psico.id}>Contactar</a>
   <!-- Modal Structure -->
