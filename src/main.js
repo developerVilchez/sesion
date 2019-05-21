@@ -15,8 +15,12 @@ root.addEventListener('click', (event) => {
 
    if (data.hasOwnProperty(event.target.id)){
     event.currentTarget.innerHTML = HeaderProfile() + SectionDetailPsicoProfile(data[event.target.id]);
-    $('.modal').modal();
-    const buttonWasap = document.querySelector(`[data-psico=${data[event.target.id].id}]`);
+    console.log(data[event.target.id].id)
+    const buttonContactar = document.querySelector(`#${data[event.target.id].id}`);
+    buttonContactar.addEventListener('click', () => {
+      $('.modal').modal();
+    })
+    const buttonWasap = document.querySelector(`#${data[event.target.id].id}-wasap`);
     const reasonSesion = document.querySelector('#icon_prefix2');
     buttonWasap.addEventListener('click', (e) => {
       window.open(`https://api.whatsapp.com/send?phone=${e.target.dataset.phone}&text=${replaceString(reasonSesion.value)}`)
