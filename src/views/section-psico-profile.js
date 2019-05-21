@@ -15,7 +15,7 @@ const SectionPsicoProfile = (psicos) => {
               ${listaEspecialidadProfile(data[key].especilidades)}
             </ul>
             <div class="profile-preview-button">
-              <a id=${keysData[ind]} class="button-secondary">Ver Perfil</a>
+              <a id=${keysData[ind]} href="#" class="button-secondary">Ver Perfil</a>
             </div>
         </div>
      </div>

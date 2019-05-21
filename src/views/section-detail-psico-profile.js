@@ -22,8 +22,6 @@ const SectionDetailPsicoProfile = (psico) => {
                 <ul class="bullet-list">
                   ${listaEspecialidadProfile(psico.especilidades)}
                 </ul>
-
-
                 <!-- Modal Trigger -->
                 <a class="button-primary modal-trigger" href="#modal1" id=${psico.id}>Contactar</a>
               </div>

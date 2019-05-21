@@ -515,12 +515,29 @@ nav ul a {
     min-height: 150px;
     padding: 15px 0;
   }
+  #navbar-container-mobile {
+    display: none;
+  }
+
   #navbar-container-desktop {
     display: block;
   }
- #navbar-container-mobile {
-   display: none;
- }
+
+  #navbar-container-desktop ul {
+    width: 100%;
+    margin-left: 20em;
+    height: 65px;
+  }
+
+  #navbar-container-desktop li {
+    width: 25%;
+    height: 65px;
+  }
+
+  #navbar-container-desktop li a {
+    text-align: center;
+    height: 65px;
+  }
 
  .profile-content-block .bullet-list {
     min-height: 84px;
