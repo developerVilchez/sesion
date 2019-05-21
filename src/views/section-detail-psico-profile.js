@@ -22,8 +22,6 @@ const SectionDetailPsicoProfile = (psico) => {
                 <ul class="bullet-list">
                   ${listaEspecialidadProfile(psico.especilidades)}
                 </ul>
-
-
                 <!-- Modal Trigger -->
                 <a class="button-primary modal-trigger" href="#modal1" id=${psico.id}>Contactar</a>
               </div>
@@ -71,7 +69,7 @@ const SectionDetailPsicoProfile = (psico) => {
       </div>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat" id=${psico.id}-wasap data-phone=${psico.celular}>Inicia Sesión</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" data-psico=${psico.id} data-phone=${psico.celular}>Inicia Sesión</a>
     </div>
   </div>  
 </div>`
