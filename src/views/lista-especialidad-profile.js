@@ -1,8 +1,7 @@
 const listaEspecialidadProfile = (arr) => {
-  let string = `<ul class="bullet-list">`;
+  let string = '';
    arr.forEach(str => {
      string += `<li>${str}</li>`
    });
-  string += `<ul/>`
  return string;
 }
