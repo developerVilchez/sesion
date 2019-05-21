@@ -105,7 +105,7 @@ h4, .h4 {
 }
 
 h5 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 /* Etiquetas P - Parrafos */
@@ -274,12 +274,6 @@ nav ul a {
 
 /* Section how work*/
 
-/*
-.how-work h2 {
- padding-top: 1.5em;
-}
-*/
-
 .option {
   background-color: rgba(34, 156, 150, 0.15);
   position: relative;
@@ -288,24 +282,12 @@ nav ul a {
 
 /* Section team */
 
-/*
-.team h2 {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-*/
 .team a {
   display: inline-block;
   margin-top: 4em;
 }
 
 /* Section benefits */
-
-/*
-.benefits h2 {
-  padding-top: 1.5em;
- }
-*/
 
 .option, .service {
   margin-bottom: 40px;
@@ -412,10 +394,6 @@ nav ul a {
   outline: 1px solid var(--secondary-color);
   padding: 0.5em;
 }
-[type="radio"]:not(:checked), [type="radio"]:checked {
-  position: static;
-  opacity: 0;
-}
 
 #contacta-santiago-wasap {
   color: var(--light-gray);
@@ -425,9 +403,45 @@ nav ul a {
 
 /* Estilos form */
 
-.input-field .prefix.active {
-  color: var(--tertiary-color);
-}
+
+  /* label focus color */
+  .contact-modal .input-field input[type=text]:focus + label,
+  .contact-modal .input-field input[type=tel]:focus + label,
+  .contact-modal .input-field input[type=email]:focus + label,
+  .contact-modal .input-field textarea:focus + label   {
+    color: var(--text-color);
+  }
+  /* label underline focus color */
+  .contact-modal .input-field input[type=text]:focus,
+  .contact-modal .input-field input[type=tel]:focus,
+  .contact-modal .input-field input[type=email]:focus,
+  .contact-modal .input-field textarea:focus {
+    border-bottom: 1px solid var(--tertiary-color);
+    box-shadow: 0 1px 0 0 var(--tertiary-color);
+  }
+  /* valid color */
+  .contact-modal .input-field input[type=text].valid {
+    border-bottom: 1px solid var(--tertiary-color);
+    box-shadow: 0 1px 0 0 var(--tertiary-color);
+  }
+  /* invalid color */
+  .contact-modal .input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: var(--tertiary-color);
+  }
+
+  /* checked radio-button color */
+  [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid var(--tertiary-color);
+  }
+
+  [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: var(--tertiary-color);
+  }
 
 @media only screen and (max-width: 600px) and (min-width: 375px) {
   .bg-image {
@@ -470,6 +484,10 @@ nav ul a {
 
   h2 {
     font-size: 3em;
+  }
+
+  h5 {
+    font-size: 1.3em;
   }
 
   /* Logo */

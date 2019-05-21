@@ -35,11 +35,12 @@ const SectionDetailPsicoProfile = (psico) => {
    </div>
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+  <div id="modal1" class="modal contact-modal">
     <div class="modal-content">
-      <h5>Información Previa</h5>
+      
       <div class="row">
-        <form class="col s12">
+        <form class="col s12 m10 offset-m1">
+          <h5>Información Previa</h5>
           <div class="input-field">
             <i class="material-icons prefix">account_circle</i>
             <input id="icon_prefix" type="text" class="validate">
@@ -49,29 +50,45 @@ const SectionDetailPsicoProfile = (psico) => {
             <i class="material-icons prefix">phone_iphone</i>
             <input id="icon_telephone" type="tel" class="validate">
             <label for="icon_telephone">Celular</label>
+            <span class="helper-text" data-error="Ingresa un número telefónico válido"></span>
           </div>
           <div class="input-field">
             <i class="material-icons prefix">email</i>
             <input id="icon_email" type="email" class="validate">
             <label for="icon_email">Email</label>
+            <span class="helper-text" data-error="Ingresa un email válido"></span>
           </div>
+          <h5>¿Cuántas sesiones deseas tomar?</h5>
           <div class="input-field">
-            <h4>¿Cuántas sesiones deseas tomar?</h4>
-            <input type="radio" name="planes" value="1">Una sesión<br>
-            <input type="radio" name="planes" value="4">Paquete de 4 sesiones<br>
-            <input type="radio" name="planes" value="0">Todavía no lo decido
+            <p>
+              <label>
+                <input class="with-gap" name="planes" type="radio" value="1"/>
+                <span>Una sesión</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input class="with-gap" name="planes" type="radio" value="4"/>
+                <span>Paquete de 4 sesiones</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input class="with-gap" name="planes" type="radio" value="0"/>
+                <span>Todavía no lo decido</span>
+              </label>
+            </p>
           </div>
+          <h5>¿Qué te animó a iniciar una sesión?</h5>
           <div class="input-field">
-            <h4>¿Qué te animó a iniciar una sesión?</h4>
-            <i class="material-icons prefix">mode_edit</i>
             <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
             <label for="icon_prefix2">Cuéntame</label>
           </div>
-        </form> 
+
+          <a href="#!" class="modal-close button-primary" id=${psico.id}-wasap data-phone=${psico.celular}>Inicia Sesión</a>
+        </form>
+
       </div>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat" id=${psico.id}-wasap data-phone=${psico.celular}>Inicia Sesión</a>
     </div>
   </div>  
 </div>`
