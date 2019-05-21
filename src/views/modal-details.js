@@ -1,5 +1,7 @@
 const ModalDetails = (id, mobile) => {
   return `
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id=${id}>Contactar</a>
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
@@ -37,7 +39,7 @@ const ModalDetails = (id, mobile) => {
       </div>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat" id=${id} data-phone=${mobile}>Inicia Sesión</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" id=${id}-wasap data-phone=${mobile}>Inicia Sesión</a>
     </div>
   </div>  
 </div>`
