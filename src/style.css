@@ -236,6 +236,10 @@ nav ul a {
    background: var(--primary-color);
 }
 
+#navbar-container-desktop{
+  display: none;
+}
+
  /* Section info*/
  .info {
    padding-top: 4em;
@@ -400,10 +404,6 @@ nav ul a {
 }
 
 @media only screen and (max-width: 600px) and (min-width: 375px) {
-  .navbar {
-    background-color: #FFFFFF;
-  }
-
   .bg-image {
     max-height: 568px;
   }
@@ -418,7 +418,9 @@ nav ul a {
 }
 
 @media only screen and (max-width: 993px) and (min-width: 601px) {
-  
+  #navbar-container-mobile{
+    display: none;
+  }
   .bg-image {
     height: 600px;
   }
@@ -426,11 +428,12 @@ nav ul a {
   .icon-profile {
     height: 320px;
   }
+
+  .info img{
+    display: none;
+  }
 }
 
-#navbar-container-desktop {
-  display: none;
-}
 
 @media only screen and (min-width: 601px) {
   .logo {
@@ -463,12 +466,6 @@ nav ul a {
    display: none;
  }
 
- /*
- .profile-preview {
-    height: 530px;
-  }
-  */
-
  .profile-content-block .bullet-list {
     min-height: 84px;
     position: relative;
@@ -485,8 +482,6 @@ nav ul a {
     left: 0;
     background: linear-gradient(to bottom, rgba(255,255,255,0) 65%, rgba(255,255,255,0.8) 80%, rgba(255,255,255,0.95) 95%);
   }  
-
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -497,6 +492,9 @@ nav ul a {
 
 
 @media only screen and (min-width: 993px) {
+  .info img{
+    display: none;
+  }
   #navbar-container-mobile{
     display: none;
   }
@@ -510,13 +508,12 @@ nav ul a {
     align-items: center;
     margin-bottom: 0;
   }
-
-
-
 }
 
-
 @media only screen and (min-width: 1201px) {
+  .info img{
+    display: none;
+  }
   .profile-preview .icon-profile {
     height: 320px;
   }
