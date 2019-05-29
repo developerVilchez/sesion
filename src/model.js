@@ -15,10 +15,11 @@ const data = {
    nombre : 'Santiago Joseph',
    imagen : 'src/images/santiago.png',
    formacion :'Psicólogo Clínico y Mg. En Estudios Teóricos en Psicoanálisis',
-   especilidades : ['Psicoterapeuta de adolescentes y adultos.', 'Experiencia en estrés laboral y crisis vitales.'],
+   especilidades : ['Psicoterapeuta emocional con adolescentes y adultos.', 'Experiencia en estrés laboral y burnout.', 'Psicoterapia breve o focal.'],
    celular : '51984119144',
    perfil: ['psicoterapeuta'],
-   bio:''
+   bio:'Soy Licenciado en Psicología Clínica y Magister en Estudios Teóricos en Psicoanálisis de la PUCP. Hice mis prácticas pre profesionales en el Centro de Psicoterapia Psicoanalítica de Lima. Asimismo, pertenezco al Colegio de Psicólogos del Perú. Mi especialidad es el trabajo en psicoterapia con adolescentes y adultos. Además tengo experiencia en el ámbito corporativo, atendiendo temas de estrés laboral y burnout. Mi estilo terapéutico mantiene la línea del psicoanálisis y puedo describirme como un psicoterapeuta versátil y contenedor.',
+   percepcion : 'Soy de la idea de que la psicoterapia online permite romper barreras de espacio y tiempo, con un alto nivel de profesionalismo, confidencialidad y eficacia.'
   },
   Amelie :{
     id: 'psico-3',
