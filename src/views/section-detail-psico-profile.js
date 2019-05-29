@@ -11,7 +11,8 @@ const SectionDetailPsicoProfile = (psico) => {
               </div>
               <div class="col s12 l8">
                 <h5 class="center">${psico.nombre}</h5>
-                <p class="light">${psico.formacion}</p>
+                <p class="light">${psico.bio}</p>
+                <p>${psico.percepcion}</p>
               </div>
             </div>
           </div>
